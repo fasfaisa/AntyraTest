@@ -369,7 +369,6 @@ background-color: #F6F6F6CC;
     color: #999999;
     line-height: 1.6;
 }
-
 .service-items {
     display: flex;
     justify-content: space-between;
@@ -378,21 +377,28 @@ background-color: #F6F6F6CC;
 
 .service-item {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-image {
+    position: relative;
     margin-bottom: 20px;
-    height: 180px;
+    padding-bottom: 75%; /* Create a fixed aspect ratio (4:3) */
+    height: 0;
     overflow: hidden;
-
+    background-color: #ffffff;
+    border: 15px solid #ffffff;
+    box-sizing: border-box;
 }
 
 .service-image img {
-    display: block;
-    width: 287px;
-    height: 368px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border:15px solid #ffffff;
 }
 
 .service-item h2 {
@@ -653,6 +659,20 @@ background-color: #F6F6F6CC;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+.news-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 15px 0 15px; /* White space at top and sides only */
+    background-color: #ffffff;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 .news-card {
     background-color: #ffffff;
@@ -660,21 +680,6 @@ background-color: #F6F6F6CC;
     border-radius: 8px;
     overflow: hidden;
 }
-
-.news-image {
-    height: 220px;
-    overflow: hidden;
-    position: relative;
-}
-
-.news-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 15px solid #ffffff;
-    box-sizing: border-box;
-}
-
 .news-content {
     padding: 0 20px 20px;
 }
