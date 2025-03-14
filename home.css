@@ -353,7 +353,7 @@ background-color: #F6F6F6CC;
 }
 
 .service-title h2 {
-    font-size: 28px;
+    font-size: 46px;
     font-weight: 600;
     color: #333333;
     line-height: 1.2;
@@ -663,7 +663,7 @@ background-color: #F6F6F6CC;
     height: 220px;
     overflow: hidden;
     position: relative;
-    padding: 15px 15px 0 15px; /* White space at top and sides only */
+    padding: 15px 15px 15px 15px;
     background-color: #ffffff;
 }
 
@@ -672,12 +672,12 @@ background-color: #F6F6F6CC;
     height: 100%;
     object-fit: cover;
     display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background-color: #ffffff;
 }
 
 .news-card {
-    background-color: #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
     overflow: hidden;
 }
 .news-content {
